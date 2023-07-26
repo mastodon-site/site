@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "mastodon.site docs",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -20,63 +20,76 @@
   },
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "name": "Support 🛟",
+      "url": "https://docs.mastodon.site/support/overview"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "mastodon.site",
+    "url": "https://social.mastodon.site"
+  },
+  "primaryTab": {
+    "name": "Home"
   },
   "tabs": [
     {
-      "name": "API Reference",
-      "url": "api-reference"
+      "name": "Mastodon admins",
+      "url": "admins"
+    },
+    {
+      "name": "Mastodon.site support",
+      "url": "support"
     }
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "name": "Join mastodon.site",
+      "icon": "mastodon",
+      "url": "https://social.mastodon.site"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
+      "name": "mastodon.site blog",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://docs.mastodon.site/blog/latest"
     }
   ],
   "navigation": [
     {
       "group": "Get Started",
-      "pages": ["introduction", "quickstart", "development"]
-    },
-    {
-      "group": "Essentials",
-      "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
-    },
-    {
-      "group": "API Documentation",
-      "pages": ["api-reference/authentication"]
-    },
-    {
-      "group": "Endpoint Examples",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/update",
-        "api-reference/endpoint/delete"
+        "overview",
+        "mastodon-instances",
+        "compare-instances"
+      ]
+    },
+    {
+      "group": "Managed Mastodon",
+      "pages": [
+        "managed-instance/costs",
+        "managed-instance/domain-name",
+        "managed-instance/migrate-away"
+      ]
+    },
+    {
+      "group": "Learn",
+      "pages": [
+        "learn/best-apps"
+      ]
+    },
+    {
+      "group": "Mastodon admins",
+      "pages": [
+        "admins/index",
+        "admins/relays",
+        "admins/understanding-space-usage"
+      ]
+    },
+    {
+      "group": "Mastodon.site support",
+      "pages": [
+        "support/overview",
+        "support/forgot-admin-password"
       ]
     }
-  ],
-  "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
-  }
+  ]
 }
