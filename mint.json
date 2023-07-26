@@ -21,7 +21,7 @@
   "topbarLinks": [
     {
       "name": "Support 🛟",
-      "url": "https://docs.mastodon.site/support/overview"
+      "url": "https://mastodon.site/support/overview"
     }
   ],
   "topbarCtaButton": {
@@ -50,7 +50,7 @@
     {
       "name": "mastodon.site blog",
       "icon": "newspaper",
-      "url": "https://docs.mastodon.site/blog/latest"
+      "url": "https://mastodon.site/blog/latest"
     }
   ],
   "navigation": [
