@@ -91,5 +91,10 @@
         "support/forgot-admin-password"
       ]
     }
-  ]
+  ],
+  "analytics": {
+    "plausible": {
+      "domain": "mastodon.site"
+    }
+  }
 }
