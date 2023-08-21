@@ -14,10 +14,15 @@ jobs:
       - name: Git checkout
         uses: actions/checkout@v3
 
-      - name: Install node
+      - name: Install Node
         uses: actions/setup-node@v3
         with:
           node-version: '20.x'
+
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
 
       - name: Install Mintlify CLI
         id: install-mintlify-cli
@@ -28,3 +33,14 @@ jobs:
         id: test-broken-links
         run: |
           mintlify broken-links
+
+      - name: Install pyspelling
+        id: install-pyspelling
+        run: |
+          pip install pyspelling
+
+      - name: Check spelling
+        uses: rojopolis/spellcheck-github-actions@v0
+        with:
+          config_path: .spellcheck.yml
+          task_name: Markdown
