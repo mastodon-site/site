@@ -1,3 +1,15 @@
 ActivityPub
+algorithmically
+bbc
+BBCRadio
+Elon
 fediverse
+https
+joinmastodon
+Lemmy
 Mastodon
+Pixelfed
+Postgres
+Reddit
+tooot
+Tusky
