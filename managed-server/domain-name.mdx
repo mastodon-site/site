@@ -1,0 +1,36 @@
+---
+title: 'Bring your own domain'
+description: 'Use a new or existing domain name to set up your server'
+icon: 'signature'
+---
+
+## Customize your social media presence
+
+A custom domain name is a great way to claim your identity online - and mastodon usernames work just like email addresses.
+
+Whether you want to be `john@smith.com`, `lois.lane@daily.planet` or `sam@london.football`, you can show who you are, who you work for, or what you're into. Your only limit is finding the right domain name.
+
+## Bring your own domain
+
+Although we don't register domain names for you, we give you all of the info you need to point a domain you have registered to your mastodon.site server. A few minutes is all it takes.
+
+What's more, you can continue to use that domain name for email, a blog, website, online store, or redirects.
+
+## Common domain name choices
+
+<Tip>The important thing to note is that once set, a mastodon server cannot change domain name. That would break the names of the users and other mastodon servers wouldn't know where to find them.</Tip>
+
+The good news is there's a lot of flexibility in choosing how to use a domain name with your mastodon server.
+
+The two main options are:
+### Domain is just for mastodon (domain root)
+
+If the mastodon server is the only thing you want to host (you're not also hosting a website or blog, etc) your mastodon server can run at `https://example.com`. This is called the domain 'root'. The users will be `user@example.com`.
+
+If you want to use the domain for email too, that's no problem. Setting up a mastodon server this way does not affect email functionality.
+
+### Domain also has a site (subdomain)
+
+If the domain already has, or you plan for it to have, a website or blog or something else people will see in a browser, the mastodon server can run at `https://social.example.com`. In this case, the word 'social' is a `subdomain`. You can use any word here, as long as it's not hosting something else for your domain.
+
+Even with a subdomain mastodon server running at `https://mastodon.business.com`, the users can still be set at the root - `info@business.com` or `clark.kent@daily.planet`.

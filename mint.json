@@ -58,16 +58,16 @@
       "group": "Get Started",
       "pages": [
         "overview",
-        "mastodon-instances",
-        "compare-instances"
+        "mastodon-servers",
+        "compare-servers"
       ]
     },
     {
       "group": "Managed Mastodon",
       "pages": [
-        "managed-instance/costs",
-        "managed-instance/domain-name",
-        "managed-instance/migrate-away"
+        "managed-server/costs",
+        "managed-server/domain-name",
+        "managed-server/migrate-away"
       ]
     },
     {
