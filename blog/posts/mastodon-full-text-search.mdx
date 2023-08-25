@@ -18,3 +18,33 @@ Once a server upgrades, the setting will be available to users but on an opt-in 
 
 <img height="800" src="/images/full-text-search.png" />
 
+The feature is opt in because it impacts the visibility and possibly the privacy of the user, so Mastodon also want to make it obvious to users that the new setting exists and that they may want to adjust it when it is available to them.
+
+The feature does depend on the server admins running a search engine service (the open source project [ElasticSearch](https://github.com/elastic/elasticsearch) is compatible with Mastodon), which handles indexing and providing speedy results as you search.
+
+<Tip>[Mastodon.site](https://mastodon.site) will be making full text search (with ElasticSearch) available for all servers at no extra cost.</Tip>
+
+## Advanced search filters
+
+One of the great benefits of full text search is you'll also be able to use filters.
+
+Some examples we know of so far [from the announcement thread](https://oisaur.com/@renchap/110946200015843570):
+
+`has:image` / `has:video` / `has:audio` / `has:media`
+`has:poll` / `has:link` / `has:embed`
+`is:sensitive` / `is:reply`
+`language:en`
+`from:account`
+`before:2023-08-08`
+`after:2023-08-08`
+`during:2023-08-08`
+
+You'll be able to add these filters directly to your search query, but also they'll be available to Mastodon apps to make it much easier to filter what you see.
+
+## What next?
+
+We're already testing full text search for Mastodon.site servers - if you'd like to be among the first to benefit from this new feature, join us on [https://social.mastodon.site](https://social.mastodon.site).
+
+Why not give us a follow at [info@mastodon.site](https://social.mastodon.site/@info) - we share new blog posts there, and we'd love to know what you think of this one, or any other topics you'd like to hear more about!
+
+<Snippet file="packages.mdx" />

@@ -3,6 +3,7 @@ algorithmically
 bbc
 BBCRadio
 crypto
+ElasticSearch
 Elon
 fediverse
 https
