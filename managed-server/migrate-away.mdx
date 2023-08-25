@@ -1,17 +1,17 @@
 ---
 title: 'Migrate your data away'
-description: 'We can help you export your instance data'
+description: 'We can help you export your server data'
 icon: 'door-open'
 ---
 
-<Tip>While we want mastodon.site to be the best choice for hosting a no-hassle mastodon instance, we also believe in data portability and that if you want to take your social media elsewhere we're here to help.</Tip>
+<Tip>While we want mastodon.site to be the best choice for hosting a no-hassle mastodon server, we also believe in data portability and that if you want to take your social media elsewhere we're here to help.</Tip>
 
 ## What we can migrate
 
-As part of the process of running your mastodon instance, we store two main types of data:
+As part of the process of running your mastodon server, we store two main types of data:
 
-* **Postgres database data** - this contains your users, their posts, follows, and all instance settings
-* **Media data** - all of the photos, videos and profile pictures uploaded by, or in the timelines of, your instance's users
+* **Postgres database data** - this contains your users, their posts, follows, and all server settings
+* **Media data** - all of the photos, videos and profile pictures uploaded by, or in the timelines of, your server's users
 
 If you decide to leave, we can transfer both of these data stores to you following your requests. Just [contact us](/support/overview).
 
@@ -19,4 +19,4 @@ If you decide to leave, we can transfer both of these data stores to you followi
 
 Mastodon also stores some data in a temporary cache (Redis). Some of this is genuinely cache data and doesn't need migrating anyway; some of it is used to store the current timeline of users (and some in-flight queue data).
 
-Unfortunately we have no way to export this for you, but once you start up a new instance this cache data will start to populate again.
+Unfortunately we have no way to export this for you, but once you start up a new server this cache data will start to populate again.
