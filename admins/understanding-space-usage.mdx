@@ -10,6 +10,8 @@ When a Mastodon server is running, it stores different types of data in a number
 - The media storage (often [S3-compatible object storage](https://docs.joinmastodon.org/admin/optional/object-storage/)) stores user-uploaded images, videos, user profile photos and profile header images
 - The server stores the state of background tasks in queues (Redis)
 
+You can see the storage used by each in the server's admin panel.
+
 <img height="380" src="/images/space-usage.png" />
 
 The database is the most important of the data, as well as some of the media storage, though it includes some cache data that can be recreated.
