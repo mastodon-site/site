@@ -7,7 +7,7 @@ icon: 'floppy-disk'
 When a Mastodon server is running, it stores different types of data in a number of places.
 
 - The database (PostgreSQL) will store the users and posts of the server, as well as information about other servers, their users and posts too
-- The media storage (often [S3-compatible object storage](https://docs.joinmastodon.org/admin/optional/object-storage/)) stores user-uploaded images, videos, user profile photos and profile header images
+- The media storage (often [S3-compatible object storage](https://docs.joinmastodon.org/admin/optional/object-storage/)) stores user-uploaded attachments like images or videos, user profile photos (avatars) and profile header images
 - The server stores the state of background tasks in queues (Redis)
 
 You can see the storage used by each in the server's admin panel.
@@ -17,3 +17,14 @@ You can see the storage used by each in the server's admin panel.
 The database is the most important of the data, as well as some of the media storage, though it includes some cache data that can be recreated.
 
 Redis data is important to keep, as losing the queue data might drop some posts or federation of data that hasn't yet completed.
+
+## Reducing storage space
+
+Server admins can reduce the usage of their object storage by removing local caches of media attachments, avatars or profile headers. They'll be re-cached if they are needed again, such as when one of the server's users interacts with that remote user.
+
+Steps to clean up the cache data are in the official Mastodon documentation; useful operations to include are:
+
+- [tootctl media remove](https://docs.joinmastodon.org/admin/tootctl/#media-remove)
+- [tootctl media remove-orphans](https://docs.joinmastodon.org/admin/tootctl/#media-remove-orphans)
+
+<Tip>If you're using a [Mastodon.site managed server](/mastodon-servers), we automatically run these clean up operations for you each week.</Tip>
