@@ -4,4 +4,14 @@ description: "How your mastodon server calculates storage used"
 icon: 'floppy-disk'
 ---
 
-Understanding space usage.
+When a Mastodon server is running, it stores different types of data in a number of places.
+
+- The database (PostgreSQL) will store the users and posts of the server, as well as information about other servers, their users and posts too
+- The media storage (often [S3-compatible object storage](https://docs.joinmastodon.org/admin/optional/object-storage/)) stores user-uploaded images, videos, user profile photos and profile header images
+- The server stores the state of background tasks in queues (Redis)
+
+<img height="380" src="/images/space-usage.png" />
+
+The database is the most important of the data, as well as some of the media storage, though it includes some cache data that can be recreated.
+
+Redis data is important to keep, as losing the queue data might drop some posts or federation of data that hasn't yet completed.
