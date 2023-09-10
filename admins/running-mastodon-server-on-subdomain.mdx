@@ -10,8 +10,26 @@ Many Mastodon servers are running as just one part of a person, organisation or 
 
 DNS offers a lot of flexibility in terms of how you run multiple services on [one domain name](/managed-server/domain-name).
 
-Depending on your domain's nameserver, you should be able to choose between your Mastodon instance being on the domain root (eg: `https://mastodon.site`) or a subdomain, like `https://social.mastodon.site`. Which you choose probably depends on what your primary focus is with your domain name; if you're a business, store, or blog, the root service is likely to be something other than Mastodon. If Mastodon is the primary service, that is a simple setup for Mastodon and not covered by this guide.
+Depending on your domain's nameserver, you should be able to choose between your Mastodon instance being on the domain root (eg: `https://mastodon.site`) or a subdomain, like `https://social.mastodon.site`. Which you choose probably depends on what your primary focus is with your domain name; if you're a business, store, or blog, the root service is likely to be something other than Mastodon. 
+
+If Mastodon is the primary service, and will be at domain's root, that is a simple setup for Mastodon and not covered by this guide.
 
 ## Simple subdomain setup
 
 The easiest option here is to run Mastodon as a subdomain.
+
+Mastodon server has two different environment variables related to the hostname (whether that be root or subdomain) on which it is running. It uses these variables to create the domain name part of its users - the bit after the `@`.
+
+The two variables are `LOCAL_DOMAIN` and `WEB_DOMAIN`.
+
+* `LOCAL_DOMAIN` - your domain or subdomain which uniquely identifies the server and its users; this cannot be changed once it is set and in use
+* `WEB_DOMAIN` - the domain name or subdomain on which the Mastodon server will run.
+
+`WEB_DOMAIN` is technically optional, and if you don't include it Mastodon will use the value of `LOCAL_DOMAIN` for both, which is the most likely situation.
+
+With both `LOCAL_DOMAIN` and `WEB_DOMAIN` set to the same subdomain, for example `social.mastodon.site`, it would mean that the Mastodon site would be accessible at `https://social.mastodon.site` and its users would have usernames like `account@social.mastodon.site`. 
+
+This is the most common and straightfoward setup of a Mastodon server running on a subdomain. You can choose, however, to remove the subdomain from the usernames by setting `LOCAL_DOMAIN` and `WEB_DOMAIN` to different values.
+
+## Subdomain rewriting setup
+
