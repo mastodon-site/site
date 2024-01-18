@@ -3,6 +3,7 @@ algorithmically
 bbc
 BBCRadio
 Cloudflare
+cname
 CNAME
 crypto
 DNS
