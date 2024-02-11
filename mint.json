@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Mastodon.site",
+  "name": "mastodon.site",
   "logo": {
     "dark": "/logo/logo-dark.png",
     "light": "/logo/logo-light.png"
@@ -37,7 +37,7 @@
       "url": "admins"
     },
     {
-      "name": "Mastodon.site support",
+      "name": "mastodon.site support",
       "url": "support"
     }
   ],
@@ -85,7 +85,7 @@
       ]
     },
     {
-      "group": "Mastodon.site support",
+      "group": "mastodon.site support",
       "pages": [
         "support/overview",
         "support/help-mastodon-dns-domain-names",
