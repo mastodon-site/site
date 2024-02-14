@@ -1,0 +1,33 @@
+---
+title: "mastodon.site SLA"
+description: "The service level agreement with mastodon.site"
+icon: 'handshake'
+---
+
+We want to make mastodon.site the best service for fully-managed, stress-free Mastodon hosting.
+
+For all paying customers, we offer the following commitments as part of our agreement:
+
+- A monthly uptime of at least 99% for your core Mastodon server
+- Mastodon security patches are rolled out within 24 hours
+
+## How uptime is measured
+
+We use a third party, UptimeRobot, to verifiably measure our uptime and response time. We publish these on our public status page at [https://status.mastodon.site](status.mastodon.site).
+
+They check all our Mastodon services every minute of every day, and report it immediately if any issues take place. We'll also post updates to the public status page to explain causes for any incidents.
+
+Although the public status page only shows our own Mastodon server (`social.mastodon.server`), the same check is set up for every customer's server and its results can be requested by [contacting us](/support/overview).
+
+The service level agreement exludes any issues outside of our control, for example, if your domain name records are not correectly pointing to our servers.
+
+## What's not included
+
+- Although we automatically provide ElasticSearch for all mastodon.site servers, we don't yet consider it a 'core' component and its uptime is not measured. We make every effort to make sure it is continuously available.
+- Any beta or trial features we're offering, such as DeepL language translation integration
+
+## What happens if the SLA is missed
+
+Once a calendar month is completed, we look at our uptime across all servers for that time period.
+
+If a server was below our committed uptime for that calendar month, we'll issue a Stripe credit for the value that you paid for service that calendar month.
