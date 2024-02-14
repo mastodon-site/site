@@ -8,6 +8,7 @@ CNAME
 crypto
 CSV
 CSVs
+DeepL
 DNS
 eg
 ElasticSearch
@@ -26,8 +27,12 @@ organisation
 Pixelfed
 Postgres
 Reddit
+SLA
 tooot
 tootctl
 TTL
 Tusky
+uptime
+UptimeRobot
+verifiably
 WhatsMyDNS
