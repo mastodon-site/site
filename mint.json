@@ -58,8 +58,8 @@
       "group": "Get Started",
       "pages": [
         "overview",
-        "mastodon-servers",
-        "compare-servers"
+        "getting-started",
+        "mastodon-servers"
       ]
     },
     {
