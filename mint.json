@@ -20,13 +20,13 @@
   },
   "topbarLinks": [
     {
-      "name": "Support 🛟",
-      "url": "https://mastodon.site/support/overview"
+      "name": "Service status 🚦",
+      "url": "https://status.mastodon.site"
     }
   ],
   "topbarCtaButton": {
-    "name": "mastodon.site",
-    "url": "https://social.mastodon.site"
+    "name": "Support 🛟",
+    "url": "https://mastodon.site/support/overview"
   },
   "primaryTab": {
     "name": "Home"
