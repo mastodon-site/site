@@ -6,6 +6,8 @@ Cloudflare
 cname
 CNAME
 crypto
+CSV
+CSVs
 DNS
 eg
 ElasticSearch
