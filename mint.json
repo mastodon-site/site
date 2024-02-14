@@ -73,8 +73,8 @@
     {
       "group": "Learn",
       "pages": [
-        "learn/best-apps",
-        "learn/get-your-own-mastodon-server"
+        "learn/get-your-own-mastodon-server",
+        "learn/best-apps"
       ]
     },
     {
