@@ -23,7 +23,7 @@ If you're using a domain root (for example, `https://mastodon.site`)
 | Type   | Name (required)  | Target (required)    | Proxy status           | TTL   |
 |--------|------------------|----------------------|------------------------|-------|
 | CNAME  | @                | cname.mastodon.site  | Flip to off (DNS only) | Auto  |
-| CNAME  | mastodon-assets  | cname.mastodon.site  | Flip to off (DNS only) | Auto  |
+| CNAME  | mastodon-assets  | cname.mastodon.site  | Keep proxy enabled     | Auto  |
 
 
 ### Subdomain
@@ -33,7 +33,7 @@ If you're using a subdomain (for example, `https://social.mastodon.site`) - repl
 | Type   | Name (required)         | Target (required)    | Proxy status           | TTL   |
 |--------|-------------------------|----------------------|------------------------|-------|
 | CNAME  | social                  | cname.mastodon.site  | Flip to off (DNS only) | Auto  |
-| CNAME  | mastodon-assets.social  | cname.mastodon.site  | Flip to off (DNS only) | Auto  |
+| CNAME  | mastodon-assets.social  | cname.mastodon.site  | Keep proxy enabled     | Auto  |
 
 ## Testing the DNS records
 
