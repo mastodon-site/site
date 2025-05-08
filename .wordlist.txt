@@ -20,6 +20,7 @@ hostname
 https
 joinmastodon
 Lemmy
+lightbulb
 Mastodon
 nameserver
 nameservers
