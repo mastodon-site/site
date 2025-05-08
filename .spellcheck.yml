@@ -1,24 +1,25 @@
 matrix:
- - name: Markdown
-   sources:
-   - '!README.md|**/*.md|**/*.mdx'
-   default_encoding: utf-8
-   aspell:
-     lang: en
-     d: en_US
-   dictionary:
-     encoding: utf-8
-     wordlists:
-     - .wordlist.txt
-     encoding: utf-8
-   pipeline:
-   - pyspelling.filters.markdown:
-       markdown_extensions:
-       - pymdownx.superfences
-   - pyspelling.filters.html:
-       comments: false
-       ignores:
-       - code
-       - pre
-       - Frame
-       - Tab
+  - name: Markdown
+    sources:
+      - '!README.md|**/*.md|**/*.mdx'
+    default_encoding: utf-8
+    aspell:
+      lang: en
+      d: en_US
+    dictionary:
+      encoding: utf-8
+      wordlists:
+        - .wordlist.txt
+      encoding: utf-8
+    pipeline:
+      - pyspelling.filters.markdown:
+          markdown_extensions:
+            - pymdownx.superfences
+      - pyspelling.filters.html:
+          comments: false
+          ignores:
+            - code
+            - pre
+            - Frame
+            - Tab
+            - a
