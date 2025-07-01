@@ -1,7 +1,19 @@
 ---
-title: "Understanding space usage"
-description: "How your mastodon server calculates storage used"
+title: "Using Mastodon and Bridgy Fed with Cloudflare"
+description: "How Cloudflare makes setting up Bridgy Fed easy"
 icon: 'bridge-water'
 ---
 
 If you're running a Mastodon server and using Cloudflare as your DNS service, it's easy to add support for [Bridgy Fed](https://fed.brid.gy) to set custom usernames if you bridge your Mastodon account to Bluesky.
+
+## What is Bridgy Fed
+
+Bridgy Fed allows you to bridge between fediverse services like Mastodon and Bluesky. You can use it to make your profile on one visible in another, follow people, see their posts, and reply and like and repost them. This guide assumes you already have a Mastodon account on a Mastodon server, for which you own the domain name, and would like to bridge it to Bluesky.
+
+## Why Cloudflare
+
+Many customers of Mastodon.site are using Cloudflare as their DNS service (nameserver), and Cloudflare allows adding page rules to affect traffic beyond just using DNS records. If you have a suggestion for other providers you'd like documentation for, let us know.
+
+## What's required for Bridgy Fed
+
+The main requirement we need to add is a redirection for specific URLs on your server to the Bridgy Fed server, so that once bridged to Bluesky it can find out and verify the account ownership.
