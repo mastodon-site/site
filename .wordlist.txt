@@ -2,6 +2,8 @@ ActivityPub
 algorithmically
 bbc
 BBCRadio
+Bluesky
+Bridgy
 Cloudflare
 cname
 CNAME
@@ -28,6 +30,7 @@ organisation
 Pixelfed
 Postgres
 Reddit
+repost
 SLA
 tooot
 tootctl
