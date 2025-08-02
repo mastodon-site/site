@@ -30,6 +30,7 @@ organisation
 Pixelfed
 Postgres
 Reddit
+repost
 SLA
 tooot
 tootctl
