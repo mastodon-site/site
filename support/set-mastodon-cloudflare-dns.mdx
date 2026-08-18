@@ -10,11 +10,11 @@ This page will show you how to configure your domain name on Cloudflare to work 
 
 ## Add DNS records
 
-We use two DNS records for mastodon.site servers; one to point to the actual server, and the other for the media assets - photos, videos, etc - that users upload to their account. You'll need to add both to your domain name in Cloudflare.
+We use one DNS record for mastodon.site servers, to point your domain name to the actual server. You'll need to add it to your domain name in Cloudflare.
 
 1. From the [Cloudflare dashboard](https://dash.cloudflare.com), choose the domain for your mastodon server
 2. From the menu on the left, go to `DNS` -> `Records`
-3. Click the `Add record` button; you'll need to add the following **two** records
+3. Click the `Add record` button; you'll need to add the following record
 
 ### Domain root
 
@@ -23,18 +23,16 @@ If you're using a domain root (for example, `https://mastodon.site`)
 | Type   | Name (required)  | Target (required)    | Proxy status           | TTL   |
 |--------|------------------|----------------------|------------------------|-------|
 | CNAME  | @                | cname.mastodon.site  | Flip to off (DNS only) | Auto  |
-| CNAME  | mastodon-assets  | cname.mastodon.site  | Keep proxy enabled     | Auto  |
 
 
 ### Subdomain
 
-If you're using a subdomain (for example, `https://social.mastodon.site`) - replace the word `social` in the **name** of each record with the subdomain you're using
+If you're using a subdomain (for example, `https://social.mastodon.site`) - replace the word `social` in the **name** of the record with the subdomain you're using
 
 | Type   | Name (required)         | Target (required)    | Proxy status           | TTL   |
 |--------|-------------------------|----------------------|------------------------|-------|
 | CNAME  | social                  | cname.mastodon.site  | Flip to off (DNS only) | Auto  |
-| CNAME  | mastodon-assets.social  | cname.mastodon.site  | Keep proxy enabled     | Auto  |
 
 ## Testing the DNS records
 
-Once they're both set, it can take a short while for them to be available across the internet. You can use [WhatsMyDNS.net](https://www.whatsmydns.net) to test that it's working - you'll see a green tick next to a list of IP addresses once it's ready.
+Once the record is set, it can take a short while for it to be available across the internet. You can use [WhatsMyDNS.net](https://www.whatsmydns.net) to test that it's working - you'll see a green tick next to a list of IP addresses once it's ready.
