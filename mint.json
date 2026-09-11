@@ -98,5 +98,19 @@
     "plausible": {
       "domain": "mastodon.site"
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/.well-known/webfinger",
+      "destination": "https://social.mastodon.site/.well-known/webfinger"
+    },
+    {
+      "source": "/.well-known/host-meta",
+      "destination": "https://social.mastodon.site/.well-known/host-meta"
+    },
+    {
+      "source": "/.well-known/host-meta.json",
+      "destination": "https://social.mastodon.site/.well-known/host-meta.json"
+    }
+  ]
 }
